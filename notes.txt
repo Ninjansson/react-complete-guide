@@ -1,0 +1,58 @@
+FUNCTIONS
+-----------------------------------------
+function myFnc() {
+	...
+}
+
+const myFnc = () => {
+	...
+}
+
+const myFnc = name => {
+	...
+}
+
+const myFnc = (name, age) => {
+	...
+}
+
+const myFnc = (number) => {
+	return number * 2;
+}
+const myFnc = number => number * 2;
+
+-----------------------------------------
+        EXPORTS & IMPORTS
+-----------------------------------------
+const person = { 
+	name: 'Kim'
+}
+export default person;
+
+import whatever from './person.js' (because it is default)
+
+otherwise:
+export const fncFnc = 42;
+import {fncFnc} from '/.file.js'
+
+
+-----------------------------------------
+        SPREAD & REST OPERATORS
+-----------------------------------------
+...
+
+Spread
+Used to split up array elements OR object properties
+const newArray = [...oldArray, 1, 2]
+const newObject = {...oldObject, newProp: 5}
+
+Rest
+Used to merge a list of function arguments into an array
+function sortArgs(...args) {
+	return args.sort()
+}
+
+
+-----------------------------------------
+        COMPONENTS
+-----------------------------------------
